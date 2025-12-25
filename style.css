@@ -1,0 +1,149 @@
+/* ===== 全站基本設定 ===== */
+body {
+    margin: 0;
+    font-family: "Arial", "微軟正黑體", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* ===== 導覽列 ===== */
+.btn-container {
+    text-align: center;
+    /* 讓 inline-block 元素置中 */
+}
+
+.btn-about {
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+.btn-about:hover {
+    background-color: #43a047;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== 商品區容器 ===== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* ===== 商品列表 ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* ===== 單一商品卡片 ===== */
+.product {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ===== 商品資訊 ===== */
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.price {
+    color: #e91e63;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.condition {
+    font-size: 14px;
+    color: #666;
+    margin: 4px 0;
+}
+
+/* ===== 購買方式區塊 ===== */
+.purchase {
+    background-color: white;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.purchase h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.purchase h3 {
+    margin-top: 30px;
+}
+
+.purchase ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.purchase a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.purchase a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
